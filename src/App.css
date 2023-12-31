@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+  display: flex;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.side-menu {
+  background-color: #b3e0f2; /* Light blue background color */
+  padding: 20px;
+  width: 200px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu {
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.menu h3 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.add-menu-button {
+  background-color: #4caf50;
   color: white;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.add-menu-button:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete-menu-button {
+  background-color: #ff3333;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.delete-menu-button:hover {
+  background-color: #cc0000;
+}
+
+.menu-title-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #05aaf7;
+  border-radius: 4px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #b3e0f2;
+}
+
+.item-title-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 12px;
+  border: 1px solid #05aaf7;
+  border-radius: 4px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #b3e0f2;
+}
+
+.menu-title-input:hover,
+.menu-title-input:focus,
+.item-title-input:hover,
+.item-title-input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.7);
+}
+
+.add-item-button:hover {
+  background-color: #45a049;
+}
+
+.delete-menu-button {
+  margin-left: 10px;
+}
+
+.menu button {
+  margin-top: 10px;
+}
+
+.menu button.delete-item-button,
+.menu button.add-item-button {
+  margin-left: 10px;
+}
+
+.menu button.add-item-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 11px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.menu button.delete-item-button {
+  background-color: #ff3333;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 11px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.menu button.add-item-button:hover,
+.menu button.delete-item-button:hover {
+  background-color: #45a049;
+}
+
+.menu button.delete-item-button:hover {
+  background-color: #cc0000;
 }
