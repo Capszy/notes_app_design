@@ -1,3 +1,5 @@
+Used Chat Gpt 3.5 to create a dynamic menu system in react for practice.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
